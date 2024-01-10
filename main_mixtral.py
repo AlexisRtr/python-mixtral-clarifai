@@ -8,8 +8,8 @@ from clarifai.client.model import Model
 # load_dotenv()
 
 
-clarifai_pat = os.getenv('CLARIFAI_PAT')
-clienclarifai_patt = st.secrets["CLARIFAI_PAT"]
+# clarifai_pat = os.getenv('CLARIFAI_PAT')
+clarifai_pat = st.secrets["CLARIFAI_PAT"]
 
 # Model parameters or mixtral
 inference_params = dict(temperature=0.7, max_tokens=200, top_k = 50, top_p= 0.95)
