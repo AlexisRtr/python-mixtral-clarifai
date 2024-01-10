@@ -1,0 +1,1 @@
+Streamlit app using Clarifai API and mixtral from MistralAI model.
