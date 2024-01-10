@@ -1,3 +1,6 @@
 .env
 /venvclarifai/*
 .streamlit/secrets.toml
+mixtral.ipynb
+ex1.py
+main_chatgpt.py
