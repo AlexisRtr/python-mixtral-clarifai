@@ -4,11 +4,13 @@ import time
 # from openai import OpenAI
 import os
 from clarifai.client.model import Model
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 
 clarifai_pat = os.getenv('CLARIFAI_PAT')
+clienclarifai_patt = st.secrets["CLARIFAI_PAT"]
+
 # Model parameters or mixtral
 inference_params = dict(temperature=0.7, max_tokens=200, top_k = 50, top_p= 0.95)
 
