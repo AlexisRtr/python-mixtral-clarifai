@@ -17,6 +17,12 @@ inference_params = dict(temperature=0.7, max_tokens=200, top_k = 50, top_p= 0.95
 
 st.title("Chatbot with Mixtral")
 
+st.sidebar.subheader("File Uploader:")
+uploaded_files = st.sidebar.file_uploader("Choose files",
+                                            type=["txt", "html", "css", "py", "pdf", "ipynb", "docx", "csv"],
+                                            accept_multiple_files=True)
+st.sidebar.metric("Number of files uploaded", len(uploaded_files))
+
 # Initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
